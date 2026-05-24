@@ -1,0 +1,21 @@
+def use_in_a_area(f,x,y)：
+操纵一台无人机在(x,y)大小的矩阵里执行f函数。
+这个没写好，大家直接用cover就行。
+def cover(f)：
+同上，但是覆盖全部的田地。
+def global_multi_use(f)：
+同上，但是使用多无人机。
+def __move(x,y)：
+按照(x,y)的向量移动。
+def dis(P1,P2)：
+计算点P1和P2之间的曼哈顿距离。
+def goto(x,y)：
+移动到点(x,y)。使用了优化，会考虑通过移动到边界跳跃的方式。（疑似有bug）
+def pack(_f,Arg)：
+将_f(Arg)打包成一个无参数的函数。用来给无人机传参。
+def wait()：
+等待所有子无人机完成任务。
+def rev(dir)：
+返回与dir相反的方向。
+def at_edge(dir)：
+判断继续向dir方向移动是否会跨越边界。
